@@ -41,5 +41,11 @@ const siteContent = {
 
 /*Header*/
 
+const headerNavLinks = document.querySelectorAll("header nav a");
+headerNavLinks[0].textContent = "About";
+headerNavLinks[1].textContent = "Services";
+headerNavLinks[2].textContent = "Products";
+headerNavLinks[3].textContent = "Vision";
+headerNavLinks[4].textContent = "Features";
+headerNavLinks[5].textContent = "Contact";
 
- 
