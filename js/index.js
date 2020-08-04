@@ -42,10 +42,7 @@ const siteContent = {
 /*Header*/
 
 const headerNavLinks = document.querySelectorAll("header nav a");
-
-headerNavLinks.forEach((ele) => {
-  ele.setAttribute("style", "color:green")
-});
+const nav = document.querySelector("header nav")
 
 headerNavLinks[0].textContent = "Services";
 headerNavLinks[1].textContent = "Product";
@@ -54,7 +51,30 @@ headerNavLinks[3].textContent = "Features";
 headerNavLinks[4].textContent = "About";
 headerNavLinks[5].textContent = "Contact";
 
-const headerImg = document.querySelector("header img");
+headerNavLinks.forEach((ele) => {
+  ele.style.color = "green";
+  ele.style.fontWeight = "bold";
+});
+
+//appendChild addition
+const a = document.createElement("a");
+const newLink = nav.appendChild(a);
+newLink.textContent = "Models"
+newLink.href = "#";
+newLink.style.color = "green";
+newLink.style.fontWeight = "bold";
+
+//prependChild addition
+const future = document.createElement("a");
+future.href= "#";
+future.style.color = "green";
+future.style.fontWeight = "bold";
+future.textContent= "Future";
+nav.prepend(future);
+
+
+
+const headerImg = document.getElementById("logo-img");
 headerImg.src = "./img/logo.png";
 
 /*CTA Section*/
