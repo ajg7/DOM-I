@@ -72,6 +72,28 @@ header4[2].textContent = "Services";
 header4[3].textContent = "Product";
 header4[4].textContent = "Vision";
 
+const mainContentImg = document.querySelector(".main-content img");
+mainContentImg.src="./img/mid-page-accent.jpg";
+
+const featuresP = document.querySelector(".main-content .top-content .text-content:nth-child(1) p");
+featuresP.append("Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.")
+
+const aboutP = document.querySelector(".main-content .top-content .text-content:nth-child(2) p");
+aboutP.append("About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.")
+
+const serviceP = document.querySelector(".main-content .bottom-content .text-content:nth-child(1) p")
+serviceP.append("Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.")
+
+const productP = document.querySelector(".main-content .bottom-content .text-content:nth-child(2) p")
+productP.append("Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.")
+
+const visionP = document.querySelector(".main-content .bottom-content .text-content:nth-child(3) p")
+visionP.append("Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.")
 
 /*Footer*/
 header4[5].textContent = "Contact";
+
+const contactText = document.querySelectorAll(".contact p");
+contactText[0]="123 Way 456 Street <br> Somewhere, USA"
+contactText[1]="1 (888) 888-8888"
+contactText[2]="sales@greatidea.io"
