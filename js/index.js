@@ -62,3 +62,16 @@ ctaText.append("DOM is Awesome!");
 
 const ctaButton = document.querySelector(".cta:nth-of-type(1) button")
 ctaButton.append("Get Started")
+
+/*Main Content*/
+
+const header4 = document.getElementsByTagName("h4");
+header4[0].textContent = "Features";
+header4[1].textContent = "About";
+header4[2].textContent = "Services";
+header4[3].textContent = "Product";
+header4[4].textContent = "Vision";
+
+
+/*Footer*/
+header4[5].textContent = "Contact";
