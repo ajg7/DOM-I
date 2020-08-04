@@ -42,6 +42,11 @@ const siteContent = {
 /*Header*/
 
 const headerNavLinks = document.querySelectorAll("header nav a");
+
+headerNavLinks.forEach((ele) => {
+  ele.setAttribute("style", "color:green")
+});
+
 headerNavLinks[0].textContent = "Services";
 headerNavLinks[1].textContent = "Product";
 headerNavLinks[2].textContent = "Vision";
