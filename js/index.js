@@ -94,6 +94,7 @@ visionP.append("Vision content elementum magna eros, ac posuere elvit tempus et.
 header4[5].textContent = "Contact";
 
 const contactText = document.querySelectorAll(".contact p");
-contactText[0]="123 Way 456 Street <br> Somewhere, USA"
-contactText[1]="1 (888) 888-8888"
-contactText[2]="sales@greatidea.io"
+console.log(contactText)
+contactText[0].innerText="123 Way 456 Street \r\n Somewhere, USA";
+contactText[1].textContent="1 (888) 888-8888"
+contactText[2].textContent="sales@greatidea.io"
