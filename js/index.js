@@ -57,5 +57,6 @@ headerImg.src = "./img/logo.png";
 const cta = document.getElementById("cta-img");
 cta.src= "./img/header-img.png";
 
-const ctaText = document.querySelector(".cta h1");
-ctaText.textContent("DOM is Awesome!")
+const ctaText = document.querySelector(".cta:nth-of-type(1) h1");
+ctaText.append("DOM is Awesome!");
+
