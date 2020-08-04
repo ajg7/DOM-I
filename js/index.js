@@ -42,10 +42,20 @@ const siteContent = {
 /*Header*/
 
 const headerNavLinks = document.querySelectorAll("header nav a");
-headerNavLinks[0].textContent = "About";
-headerNavLinks[1].textContent = "Services";
-headerNavLinks[2].textContent = "Products";
-headerNavLinks[3].textContent = "Vision";
-headerNavLinks[4].textContent = "Features";
+headerNavLinks[0].textContent = "Services";
+headerNavLinks[1].textContent = "Product";
+headerNavLinks[2].textContent = "Vision";
+headerNavLinks[3].textContent = "Features";
+headerNavLinks[4].textContent = "About";
 headerNavLinks[5].textContent = "Contact";
 
+const headerImg = document.querySelector("header img");
+headerImg.src = "./img/logo.png";
+
+/*CTA Section*/
+
+const cta = document.getElementById("cta-img");
+cta.src= "./img/header-img.png";
+
+const ctaText = document.querySelector(".cta h1");
+ctaText.textContent("DOM is Awesome!")
