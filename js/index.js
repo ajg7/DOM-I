@@ -58,7 +58,16 @@ const cta = document.getElementById("cta-img");
 cta.src= "./img/header-img.png";
 
 const ctaText = document.querySelector(".cta:nth-of-type(1) h1");
-ctaText.append("DOM is Awesome!");
+const lineBreak1 = document.createElement("br");
+const lineBreak2 = document.createElement("br");
+
+
+ctaText.append("DOM");
+ctaText.appendChild(lineBreak1);
+ctaText.append("is")
+ctaText.appendChild(lineBreak2);
+ctaText.append("Awesome!")
+console.log(ctaText);
 
 const ctaButton = document.querySelector(".cta:nth-of-type(1) button")
 ctaButton.append("Get Started")
