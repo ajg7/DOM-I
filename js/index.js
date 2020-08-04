@@ -90,11 +90,15 @@ productP.append("Product content elementum magna eros, ac posuere elvit tempus e
 const visionP = document.querySelector(".main-content .bottom-content .text-content:nth-child(3) p")
 visionP.append("Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.")
 
-/*Footer*/
+/*Contact*/
 header4[5].textContent = "Contact";
 
 const contactText = document.querySelectorAll(".contact p");
-console.log(contactText)
-contactText[0].innerText="123 Way 456 Street \r\n Somewhere, USA";
+contactText[0].innerText="123 Way 456 Street \n Somewhere, USA";
 contactText[1].textContent="1 (888) 888-8888"
 contactText[2].textContent="sales@greatidea.io"
+
+/*Footer*/
+
+const copyRightInfo = document.querySelector("footer p");
+copyRightInfo.append("Copyright Great Idea! 2018")
