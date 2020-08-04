@@ -60,3 +60,5 @@ cta.src= "./img/header-img.png";
 const ctaText = document.querySelector(".cta:nth-of-type(1) h1");
 ctaText.append("DOM is Awesome!");
 
+const ctaButton = document.querySelector(".cta:nth-of-type(1) button")
+ctaButton.append("Get Started")
